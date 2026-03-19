@@ -1,0 +1,9 @@
+{
+  "name": "alfresco-proxy",
+  "scripts": { "start": "node proxy.js" },
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "socks-proxy-agent": "^8.0.0"
+  }
+}
