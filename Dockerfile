@@ -1,9 +1,6 @@
 FROM node:20-alpine
 
-RUN apk add --no-cache curl bash
-
-# Instalar Tailscale
-RUN curl -fsSL https://tailscale.com/install.sh | sh
+RUN apk add --no-cache curl bash tailscale
 
 WORKDIR /app
 COPY package.json ./
